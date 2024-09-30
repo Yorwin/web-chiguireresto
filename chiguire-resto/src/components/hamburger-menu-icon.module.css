@@ -1,0 +1,159 @@
+label {
+    display: flex;
+    flex-direction: column;
+    width: 45.6px; /* 56px reducido en un 20% adicional */
+    cursor: pointer;
+  }
+  
+  label span {
+    background: #fff;
+    border-radius: 10px;
+    height: 5.48px; /* 5.6px reducido en un 20% adicional */
+    margin: 2.48px 0; /* También se reduce el margen en un 20% adicional */
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  
+  span:nth-of-type(1) {
+    width: 32%; /* 40% reducido en un 20% adicional */
+  }
+  
+  span:nth-of-type(2) {
+    width: 64%; /* 80% reducido en un 20% adicional */
+  }
+  
+  span:nth-of-type(3) {
+    width: 48%; /* 60% reducido en un 20% adicional */
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(4.12px, 0.70px); /* Ajuste de la traducción proporcionalmente */
+  }
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform: rotatez(-45deg);
+  }
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 32%; /* 40% reducido en un 20% adicional */
+    transform: translate(13px, -7.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+
+/*Ajustes Hamburger Icon 500px*/
+
+@media screen and (max-width:500px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 32%; /* 40% reducido en un 20% adicional */
+    transform: translate(13px, -7.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 450px*/
+
+@media screen and (max-width:450px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 32%; /* 40% reducido en un 20% adicional */
+    transform: translate(12px, -7.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 420px*/
+
+@media screen and (max-width:420px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(5.12px, 2px); /* Ajuste de la traducción proporcionalmente */
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 32%; /* 40% reducido en un 20% adicional */
+    transform: translate(11px, -7.94px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 400px*/
+
+@media screen and (max-width:400px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(4.22px, 0.60px); /* Ajuste de la traducción proporcionalmente */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform: rotatez(-45deg);
+  }
+  span:nth-of-type(2) {
+    width: 73%; /* 80% reducido en un 20% adicional */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 33%; /* 40% reducido en un 20% adicional */
+    transform: translate(11px, -8.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 370px*/
+
+@media screen and (max-width:370px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(4.22px, 0.60px); /* Ajuste de la traducción proporcionalmente */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform: rotatez(-45deg);
+  }
+  span:nth-of-type(2) {
+    width: 73%; /* 80% reducido en un 20% adicional */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 33%; /* 40% reducido en un 20% adicional */
+    transform: translate(11px, -9.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 360px*/
+
+@media screen and (max-width:360px) {
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(4.22px, 2.5px); /* Ajuste de la traducción proporcionalmente */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform: rotatez(-45deg);
+  }
+  span:nth-of-type(2) {
+    width: 73%; /* 80% reducido en un 20% adicional */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 33%; /* 40% reducido en un 20% adicional */
+    transform: translate(9px, -9.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+
+/*Ajustes Hamburger Icon 300px*/
+
+@media screen and (max-width:300px) {
+  span:nth-of-type(1) {
+    width: 52%; /* 40% reducido en un 20% adicional */
+  }
+  
+  span:nth-of-type(2) {
+    width: 94%; /* 80% reducido en un 20% adicional */
+  }
+  
+  span:nth-of-type(3) {
+    width: 78%; /* 60% reducido en un 20% adicional */
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform: rotatez(45deg) translate(4.22px, 2.5px); /* Ajuste de la traducción proporcionalmente */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform: rotatez(-45deg);
+  }
+  span:nth-of-type(2) {
+    width: 73%; /* 80% reducido en un 20% adicional */
+  }
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    width: 33%; /* 40% reducido en un 20% adicional */
+    transform: translate(9px, -9.04px) rotatez(45deg); /* Ajuste de la traducción proporcionalmente */
+  }
+}
+

@@ -1,0 +1,77 @@
+.contenedor-barra-de-navegacion {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-principal-icono-de-cierre {
+    position: absolute;
+    width: 3vw;
+    z-index: 1000;
+    background-color: #000000;
+    border-radius: 60%;
+    cursor: pointer;
+}
+
+.contenedor-principal-icono-de-cierre:hover {
+    animation-name: animacion-icono-de-cierre;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.mostrar-cerrar-menu {
+    display: block;
+}
+
+/*Ajuste del icono de cierre*/
+
+@media screen and (max-width: 768px) {
+    .contenedor-principal-icono-de-cierre {
+        width: 6vw;
+    }
+    .contenedor-principal-icono-de-cierre:hover {
+        animation-name: animacion-icono-de-cierre-movil-mediano;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contenedor-principal-icono-de-cierre {
+        width: 7vw;
+    }
+    .contenedor-principal-icono-de-cierre:hover {
+        animation-name: animacion-icono-de-cierre-movil-pequeño;
+    }
+}
+
+@keyframes animacion-icono-de-cierre {
+    from {
+        width: 3vw;
+    }
+    to {
+        width: 4vw;
+    }
+}
+
+@keyframes animacion-icono-de-cierre-movil-mediano {
+    from {
+        width: 6vw;
+    }
+    to {
+        width: 7vw;
+    }
+}
+
+@keyframes animacion-icono-de-cierre-movil-pequeño {
+    from {
+        width: 7vw;
+    }
+    to {
+        width: 8vw;
+    }
+}
+
+
+
+

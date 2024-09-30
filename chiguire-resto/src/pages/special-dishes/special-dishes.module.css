@@ -1,0 +1,324 @@
+.imagen-de-fondo-primer-plato-estrella-contenedor {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    margin-top: 8rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+    /* Asegura que el pseudo-elemento no sobresalga */
+}
+
+.imagen-de-fondo-primer-plato-estrella-contenedor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Galeria-Recursos/platos-estrella/la-mejor-cachapa.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: contrast(.7);
+}
+
+.contenedor-texto-primer-plato {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    color: #FFFFFF;
+    padding-left: 2%;
+    z-index: 2;
+}
+
+.contenedor-texto-primer-plato h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.contenedor-texto-primer-plato p {
+    width: 40%;
+    font-size: 1.3rem;
+    font-family: "Zilla Slab", system-ui;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+/* Slide */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.texto-slide-contenedor {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.texto-slide {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    white-space: pre;
+    animation: 10s slide infinite linear;
+}
+
+/* animation: 10s slide infinite linear; */
+
+.texto-slide p {
+    word-spacing: 1rem;
+    letter-spacing: 0.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0rem;
+}
+
+/* Segundo Plato Estrella */
+
+.imagen-de-fondo-segundo-plato-estrella-contenedor {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.imagen-de-fondo-segundo-plato-estrella-contenedor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Galeria-Recursos/platos-estrella/el-mejor-pepito.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: contrast(.7);
+}
+
+.contenedor-texto-segundo-plato {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    flex-direction: column;
+    text-align: right; 
+    position: relative;
+    color: #FFFFFF;
+    z-index: 2;
+    padding-right: 4%; 
+}
+
+.contenedor-texto-segundo-plato h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.contenedor-texto-segundo-plato p {
+    width: 50%;
+    font-size: 1.3rem;
+    font-family: "Zilla Slab", system-ui;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+@media screen and (max-width:568px) {
+
+    .contenedor-texto-primer-plato {
+        padding-left: 5%;
+    }
+
+    .contenedor-texto-primer-plato h1 {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+
+    .contenedor-texto-primer-plato p {
+        font-size: 1.15rem;
+        width: 70%;
+    }
+
+    .contenedor-texto-segundo-plato {
+        padding-right: 10%;
+    }
+
+    .contenedor-texto-segundo-plato h1 {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .contenedor-texto-segundo-plato p {
+        font-size: 1.15rem;
+        width: 60%;
+    }
+}
+
+/* Reservar */
+
+.reserva-contenedor-background {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.reserva-contenedor-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Galeria-Recursos/platos-estrella/restaurante-reserva.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+.contenedor-contenido-reserva {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.contenedor-contenido-reserva small {
+    font-size: 3.5vw;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    word-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.linea-reservar {
+    width: 12vw;
+    height: 0.4rem;
+    margin-right: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.contenedor-boton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-family: "Zilla Slab", system-ui;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.5s ease-in;
+}
+
+.contenedor-boton a:hover {
+    color: #48BF84;
+}
+
+@media screen and (max-width: 768px) {
+    .reserva-contenedor-background {
+        height: 30vh;
+    }
+    .contenedor-contenido-reserva small {
+        font-size: 3.8rem;
+    }
+    .contenedor-boton a {
+        font-size: 1.5rem;
+    }
+    .linea-reservar {
+        width: 10rem;
+        height: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .contenedor-contenido-reserva small {
+        font-size: 2.5rem;
+    }
+    .contenedor-boton a {
+        font-size: 1.3rem;
+    }
+    .linea-reservar {
+        width: 8rem;
+        height: 0.35rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-contenido-reserva small {
+        font-size: 1.8rem;
+    }
+    .contenedor-boton a {
+        font-size: 1rem;
+    }
+    .linea-reservar {
+        width: 6rem;
+        height: 0.35rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .reserva-contenedor-background {
+        height: 25vh;
+    }
+    .contenedor-contenido-reserva small {
+        font-size: 1.4rem;
+    }
+    .contenedor-boton a {
+        font-size: 0.8rem;
+    }
+    .linea-reservar {
+        width: 4rem;
+        height: 0.35rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .contenedor-contenido-reserva small {
+        font-size: 1rem;
+    }
+    .contenedor-boton a {
+        font-size: 0.6rem;
+    }
+    .linea-reservar {
+        width: 3rem;
+        height: 0.2rem;
+    }
+}

@@ -1,0 +1,452 @@
+.contenedor-imagen-principal {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+    /* Asegura que el pseudo-elemento no sobresalga */
+}
+
+.contenedor-imagen-principal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Galeria-Recursos/Nuestra-Carta/nuestra-carta.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+.contenedor-titulo-imagen-principal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 2;
+    /* Asegura que el título esté por encima del fondo desenfocado */
+}
+
+.titulo-imagen-principal {
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 568px) {
+    .contenedor-imagen-principal {
+        margin-bottom: 3rem;
+    }
+
+    .titulo-imagen-principal {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo-imagen-principal {
+        font-size: 6.5rem;
+    }
+}
+
+/* Presentacion Carta */
+
+.contenedor-principal-presentacion-carta {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.titulo-presentacion-carta {
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: 400;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 1rem;
+    text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.contenedor-parrafo-presentacion-carta {
+    font-size: 1.3vw;
+    font-family: "Zilla Slab", system-ui;;
+    line-height: 2.2rem;
+    width: 45%;
+}
+
+@media screen and (max-width: 568px) {
+    .titulo-presentacion-carta {
+        font-size: 3rem;
+    }
+
+    .contenedor-parrafo-presentacion-carta {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .contenedor-principal-presentacion-carta {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-presentacion-carta {
+        font-size: 3.5rem;
+    }
+
+    .parrafo-presentacion-carta {
+        font-size: 0.7rem;
+    }
+
+    .contenedor-parrafo-presentacion-carta {
+        font-size: 1.2rem;
+        width: 75%;
+    }
+
+    .contenedor-principal-presentacion-carta {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .titulo-presentacion-carta {
+        font-size: 2.5rem;
+    }
+    .parrafo-presentacion-carta {
+        font-size: 1.1rem;
+    }
+    .contenedor-parrafo-presentacion-carta {
+        width: 70%;
+    }
+}
+
+/* Sección Menu */
+
+.contenedor-menu-para-comenzar-imagen {
+    width: 90%;
+    height: 80%;
+}
+
+.contenedor-menu-los-principales-imagen {
+    width: 90%;
+    height: 80%;
+}
+
+.contenedor-menu-postres-imagen {
+    width: 90%;
+    height: 80%;
+}
+
+.imagen-carta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Para Comenzar */
+
+.posicionamientoImagenParaComenzar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.contenedor-lista-para-comenzar div {
+    width: 80%;
+}
+
+.contenedor-entrantes {
+    margin-bottom: 2rem;
+}
+
+.contenedor-entrantes:nth-last-child(1) {
+    margin-bottom: 0rem;
+}
+
+.contenedor-postres:nth-last-child(1) {
+    margin-bottom: 0rem;
+}
+
+.contenedor-titulo-para-comenzar {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Zilla Slab", system-ui;
+    margin-bottom: 1.8rem;
+}
+
+.contenedor-lista-para-comenzar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafo-para-comenzar {
+    font-size: 2vw;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+.descripcion-para-comenzar {
+    font-size: 1.2vw;
+    font-family: "Zilla Slab", system-ui;;
+}
+
+/*Principales*/
+
+.posicionamientoImagenLosPrincipales {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding-right: 2rem;
+}
+
+.contenedor-menu-los-principales-imagen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.contenedor-menu-los-principales {
+    font-size: 1.5rem;
+    font-family: "Zilla Slab", system-ui;;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.contenedor-lista-los-principales div {
+    width: 80%;
+}
+
+.parrafo-principales {
+    font-size: 2vw;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+.descripcion-principales {
+    font-size: 1.3vw;
+    font-family: "Zilla Slab", system-ui;;
+}
+
+.contenedor-principales {
+    margin-bottom: 2rem;
+}
+
+.contenedor-principales:nth-last-child(1) {
+    margin-bottom: 0rem;
+}
+
+/* Postres */
+
+.posicionamientoImagenPostres {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.contenedor-lista-postres div {
+    width: 80%;
+}
+
+.contenedor-postres {
+    margin-bottom: 2rem;
+}
+
+.contenedor-postres:nth-last-child(1) {
+    margin-bottom: 0rem;
+}
+
+.contenedor-menu-postres {
+    font-size: 1.5rem;
+    font-family: "Zilla Slab", system-ui;;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.contenedor-lista-postres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-postres {
+    font-size: 2vw;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+.descripcion-postres {
+    font-size: 1.3vw;
+    font-family: "Zilla Slab", system-ui;;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Posicionamiento */
+
+    .contenedorControlPosicion {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-lista-para-comenzar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .posicionamientoImagenParaComenzar {
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .posicionamientoImagenLosPrincipales {
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .posicionamientoImagenPostres {
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Contenedor */
+
+    .contenedor-lista-postres div {
+        width: 50%;
+    }
+
+    .contenedor-lista-para-comenzar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.8rem;
+    }
+
+    .contenedor-lista-los-principales {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.8rem;
+    }
+
+    .contenedor-lista-postres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.8rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    /* Control Fuentes */
+
+    .parrafo-para-comenzar {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-para-comenzar {
+        font-size: 0.9rem;
+    }
+
+    .parrafo-principales {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-principales {
+        font-size: 0.9rem;
+    }
+
+    .parrafo-postres {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-postres {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Control Contenedor */
+
+    .contenedor-lista-postres div {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    /* Control Fuentes */
+
+    .parrafo-para-comenzar {
+        font-size: 1.3rem;
+    }
+
+    .parrafo-principales {
+        font-size: 1.3rem;
+    }
+
+    .parrafo-postres {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    /* Control Fuentes */
+
+    .parrafo-para-comenzar {
+        font-size: 2rem;
+    }
+
+    .descripcion-para-comenzar {
+        font-size: 1.2rem;
+    }
+
+    .parrafo-principales {
+        font-size: 2rem;
+    }
+
+    .descripcion-principales {
+        font-size: 1.2rem;
+    }
+
+    .parrafo-postres {
+        font-size: 2rem;
+    }
+
+    .descripcion-postres {
+        font-size: 1.2rem;
+    }
+}

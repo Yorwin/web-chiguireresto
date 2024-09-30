@@ -1,0 +1,141 @@
+.contenedor-principal {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.contenedor-titulo-y-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-titulo {
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.contenedor-titulo h1 {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0rem;
+}
+
+.contenedor-titulo small {
+    font-size: 2rem;
+    color: #48BF84;
+}
+
+.contenedor-menu small a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #48BF84;
+    text-decoration: none;
+}
+
+.contenedor-menu small i {
+    color: #EECF6D;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.contenedor-menu small a:hover {
+    text-decoration: underline solid 0.1rem #48BF84;
+}
+
+@media screen and (max-width: 992px) {
+    .contenedor-titulo-y-menu {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .contenedor-menu {
+        margin-bottom: 1.8rem;
+    }
+    .contenedor-titulo {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Estilos texto Politica de Privacidad*/
+
+.contenedor-texto-politica-de-privacidad h3 {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+.contenedor-texto-politica-de-privacidad small {
+    font-size: 1.2rem;
+}
+
+.texto-politica-de-privacidad h3 {
+    text-transform: none;
+    margin-bottom: 1.2rem;
+}
+
+.texto-politica-de-privacidad {
+    width: 95%;
+}
+
+.texto-politica-de-privacidad p {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.texto-politica-de-privacidad h2 {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+.texto-politica-de-privacidad a {
+    color: #48BF84;
+    text-decoration: none;
+}
+
+.texto-politica-de-privacidad li {
+    margin-bottom: 1rem;
+}
+
+/* Politica de Cookies */
+
+.contenedor-texto-politica-de-cookies {
+    width: 95%;
+}
+
+.contenedor-texto-politica-de-cookies h2 {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+.contenedor-texto-politica-de-cookies p {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-texto-politica-de-cookies li {
+    margin-bottom: 1rem;
+}
+
+/* Estilos Texto Aviso Legal */
+
+.contenedor-texto-aviso-legal {
+    width: 95%;
+}
+
+.contenedor-texto-aviso-legal a {
+    color: #48BF84;
+    text-decoration: none;
+    font-weight: 650;
+}
+

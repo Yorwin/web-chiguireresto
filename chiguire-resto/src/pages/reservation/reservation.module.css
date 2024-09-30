@@ -1,0 +1,347 @@
+/* Imagen de Fondo Reserva */
+
+.contenedor-imagen-de-fondo {
+    position: relative;
+    width: 100%;
+    margin-top: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+    /* Asegura que el pseudo-elemento no sobresalga */
+}
+
+.contenedor-imagen-de-fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Galeria-Recursos/Reservar/comida-tipica-de-venezuela.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+/* Titulo Reserva */
+
+.contenedor-reserva {
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-reserva {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.88);
+    margin-bottom: 2rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* Contenedor Formulario Chiguire */
+
+.contenedor-formulario-chiguire {
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    width: 70%;
+    margin-bottom: 5rem;
+    z-index: 2;
+}
+
+.contenedor-texto-reserva {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Titulo Formulario */
+
+.contenedor-texto-reserva h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Subtitulo Formulario */
+
+.contenedor-texto-reserva small {
+    font-size: 1.2rem;
+    font-family: "Zilla Slab", system-ui;
+    font-style: italic;
+}
+
+.contenedor-subtitulo-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo-formulario {
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Zilla Slab", system-ui;
+    font-style: italic;
+}
+
+/* Personalizacion campos formularios */
+
+.formulario-reserva {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-reserva div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.formulario-reserva div:nth-child(3) {
+    margin-bottom: 0rem;
+}
+
+.contenedor-campo-y-texto-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-campo-y-texto-formulario input {
+    width: 80%;
+    height: 40px;
+    background-color: #686963;
+    color: #FFFFFF;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.contenedor-campo-y-texto-formulario input::placeholder {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: "Zilla Slab", system-ui;
+    letter-spacing: 0.1rem;
+    opacity: .8;
+    padding-left: 0.3rem;
+}
+
+.error-message {
+    color: #FF0000;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 0.3rem;
+    width: 70%;
+}
+
+.error-message-reservation {
+    width: 70%;
+    text-align: center;
+    color: #FF0000;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.success-message {
+    width: 70%;
+    text-align: center;
+    color: #48BF84;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.contenedor-formulario-boton-reservar {
+    display: flex;
+    align-items: center;
+}
+
+.input-valido {
+    border: 4px solid green;
+}
+
+.input-invalido {
+    border: 4px solid red;
+}
+
+@media screen and (max-width: 992px) {
+    .formulario-reserva {
+        margin-bottom: 2rem;
+    }
+    .formulario-reserva div {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .formulario-reserva div:nth-child(3) {
+        margin-bottom: 0rem;
+    }
+    .contenedor-campo-y-texto-formulario {
+        padding-bottom: 1rem;
+    }
+    .contenedor-campo-y-texto-formulario input {
+        width: 80%;
+        height: 40px;
+    }
+    .primera-fila:nth-child(1) {
+        margin-bottom: 0rem;
+    }
+    .segunda-fila:nth-child(2) {
+        margin-bottom: 0rem;
+    }
+    .tercera-fila .contenedor-campo-y-texto-formulario:nth-child(2) {
+        padding-bottom: 0rem;
+    }
+    .error-message {
+        width: 60%;
+    }
+    .boton-formulario-reservar {
+        width: 60%;
+    }
+    .boton-formulario-buscar {
+        width: 60%;
+    }
+}
+
+/* Boton Reservar */
+
+.boton-formulario-reservar {
+    color: #FFFFFF;
+    background-color: #48BF84;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    -webkit-box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+.boton-formulario-reservar:disabled {
+    background-color: #FFFFFF;
+    color: grey;
+}
+
+/* Contenedor Codigo Reserva */
+
+.contenedor-codigo-reserva {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-codigo-reserva {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.codigo-reserva {
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: #686963;
+    color: #FFFFFF;
+    padding: 0.8rem;
+}
+
+.codigo-reserva::placeholder {
+    color: #FFFFFF;
+    font-family: "Zilla Slab", system-ui;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    opacity: .8;
+}
+
+/* Boton Buscar */
+
+.boton-formulario-buscar {
+    color: #FFFFFF;
+    background-color: #48BF84;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 19px 43px -13px rgba(0, 0, 0, 0.75);
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+@media screen and (max-width: 568px) {
+    .boton-formulario-reservar {
+        padding: 0.1rem .6rem;
+        font-size: 1.1rem;
+    }
+
+    .boton-formulario-buscar {
+        padding: 0.1rem .6rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mensajes de Error */
+
+.contenedor-contenido-mensaje-error {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-contenido-mensaje-error input {
+    width: 40%;
+}
+
+/* Detalles de la Reserva */
+
+.contenedor-detalles-reserva {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: solid 0.3rem #000;
+    padding: 0.5rem 1rem;
+}
+
+.contenedor-detalles-reserva h2 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+    text-decoration: underline solid 0.3rem #000;
+}
+
+.contenedor-detalles-reserva p {
+    font-weight: 650;
+}
+
+.contenedor-detalles-reserva p strong {
+    color: #48BF84;
+}
+

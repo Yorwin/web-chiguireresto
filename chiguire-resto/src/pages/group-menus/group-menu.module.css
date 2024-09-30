@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');  
+
+/* Titulo */
+
+.texto-contenedor-principal {
+    margin-bottom: 2rem;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-titulo h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Anton', 'sans-serif';
+    font-size: 12rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: transparent;
+    margin-top: 18rem;
+
+    background-image: url('../../Galeria-Recursos/menu-de-grupos/group-friends-eating-restaurant.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.contenedor-texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Zilla Slab", system-ui;;
+}
+
+.contenedor-texto p {
+    text-align: center;
+    font-weight: 600;
+    width: 50%;
+}
+
+@media screen and (max-width:992px) {
+    .contenedor-titulo h1 {
+        font-size: 9rem;
+    }
+    .contenedor-texto p {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenedor-titulo h1 {
+        font-size: 7rem;
+        margin-top: 14rem;
+    }
+    .contenedor-texto p {
+        width: 80%;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .contenedor-titulo h1 {
+        font-size: 5rem;
+    }
+    .contenedor-texto p {
+        width: 90%;
+        font-size: 1.2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+/* Menu de Grupo */
+
+.contenedor-menu {
+    width: 70%;
+    margin-bottom: 3.8rem;
+    background-color: #EECF6D;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0.3rem;
+}
+
+.contenedor-menu h4 {
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.contenedor-contenido-menu-de-grupos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor-contenido-menu-de-grupos:last-child {
+    margin-bottom: 0rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+}
+
+.parrafo-menu-de-grupos {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "Prompt", sans-serif;
+    margin-bottom: 0.4rem;
+}
+
+.descripcion-menu-de-grupos {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: "Zilla Slab", system-ui;
+}
+
+.precio-contenedor-menu-grupo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 650;
+    font-family: "Prompt", sans-serif;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-menu {
+        margin-bottom: 4rem;
+    }
+}
+
+/* Boton Reserva */
+
+.contenedor-boton-reserva {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.boton-reserva {
+    padding: 2rem 10%;
+    color: #000;
+    border: 0.3rem #000 solid;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Prompt", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.boton-reserva:hover, .boton-reserva:focus {
+    box-shadow: inset 0 0 0 4rem #48BF84;
+    border-color: #000;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:768px) {
+    .boton-reserva {
+        padding: 2rem 23%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .boton-reserva {
+        padding: 2rem 18%;
+    }
+}
+    
