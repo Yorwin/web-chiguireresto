@@ -9,7 +9,8 @@ function Menu({ contenedorPrincipal, header }) {
 
     const contenedorMenuRef = useRef(null);
     const contenedor = contenedorPrincipal.current;
-    const headerElemento = header.current;
+    
+    /*const headerElemento = header.current;*/
 
     //Mostrar y Ocultar Menu. 
 
@@ -67,7 +68,7 @@ function Menu({ contenedorPrincipal, header }) {
 
     //Manejando la posición del Header después de haber pulsado sobre una opción del menú.
 
-    const actualizarPosicionHeader = () => {
+    /* const actualizarPosicionHeader = () => {
         const contenedor = contenedorPrincipal.current;
         const offsetY = window.scrollY;
 
@@ -75,7 +76,7 @@ function Menu({ contenedorPrincipal, header }) {
         if (contenedor.classList.contains('zoom-in')) {
             headerElemento.style.top = `${offsetY}px`;
         }
-    }
+    } */
 
     // Alternando la clase CSS del escalado desde el Menu. 
 
@@ -83,7 +84,7 @@ function Menu({ contenedorPrincipal, header }) {
         if (estadoEscalado) {
             contenedor.classList.remove("zoom-out");
             contenedor.classList.add("zoom-in");
-            actualizarPosicionHeader();
+            /* actualizarPosicionHeader(); */
             setEstadoEscalado(!estadoEscalado);
         } 
     }

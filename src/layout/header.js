@@ -15,6 +15,8 @@ const Header = React.forwardRef(({ contenedorPrincipal }, ref) => {
 
     //Manteniendo el Header en la parte superior de la página. 
 
+    /* 
+
     const contenedorHeader = useRef(null);
 
     const actualizarPosicionHeader = () => {
@@ -46,6 +48,8 @@ const Header = React.forwardRef(({ contenedorPrincipal }, ref) => {
         };
     }, []);
 
+    */
+
     // Función para alternar la escala del contenedor.
     const mostrarMenuNavegacion = () => {
 
@@ -69,8 +73,9 @@ const Header = React.forwardRef(({ contenedorPrincipal }, ref) => {
                 contenedor.classList.remove("zoom-out");
                 contenedor.classList.add("zoom-in");
                 contenedor.style.overflow = 'hidden';
-                actualizarPosicion();
-                actualizarPosicionHeader();
+
+                /* actualizarPosicion();
+                actualizarPosicionHeader(); */
 
                 setTimeout(() => {
                     contenedor.style.overflow = '';
@@ -98,15 +103,18 @@ const Header = React.forwardRef(({ contenedorPrincipal }, ref) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-
     return <>
 
         <div className="container-fluid">
-            <div className={styles["header-main-container"]} ref={(node) => {
-                contenedorHeader.current = node; //Asigna el ref local. 
-                if (typeof ref === 'function') ref(node); //Soporte para refs como funciones.
-                else if (ref) ref.current = node; //Soporte para refs como objetos. 
-            }}>
+            <div className={styles["header-main-container"]} >
+
+            {/* 
+            ref={(node) => {
+            contenedorHeader.current = node; //Asigna el ref local. 
+            if (typeof ref === 'function') ref(node); //Soporte para refs como funciones.
+            else if (ref) ref.current = node; //Soporte para refs como objetos. 
+            }} 
+             */}
 
                 <div id="contenedor-principal-chiguire-resto" className='row 
                 justify-content-md-end
